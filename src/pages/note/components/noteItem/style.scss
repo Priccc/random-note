@@ -1,0 +1,17 @@
+.note-item-componet {
+  padding: 12px;
+  cursor: pointer;
+
+  .note-content {
+    margin-bottom: 12px;
+  }
+
+  .note-tags {
+    display: flex;
+    align-items: center;
+
+    .note-tag-item {
+      color: var(--note-tag-color);
+    }
+  }
+}

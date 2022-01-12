@@ -1,0 +1,66 @@
+.note-editor-component {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+
+  .actions-block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color-lighter);
+
+    .stick-components {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+  
+      .stick-item {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .editor-content {
+    flex: 1;
+    padding: 10px 0;
+  
+    .editor {
+      height: 100%;
+      outline: none;
+      -webkit-user-modify: read-write-plaintext-only;
+      user-modify: read-write-plaintext-only;
+    }
+
+    [contentEditable=true]:empty:not(:focus):before {
+      color: var(--font-color-placeholder);
+      content: attr(placeholder) "记录你的今日想法...";
+    }
+  }
+
+  .editor-info-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .word-counter {
+      display: flex;
+      align-items: center;
+      color: var(--font-color-secondary);
+
+      .anticon {
+        margin-right: 4px;
+      }
+    }
+
+    .save-loading {
+      color: var(--font-color-secondary);
+
+      .anticon {
+        margin-right: 4px;
+      }
+    }
+  }
+}

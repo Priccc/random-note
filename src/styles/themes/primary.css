@@ -1,0 +1,18 @@
+:root {
+  --main-color: #3480ff;
+
+  /* Font Style */
+  --font-color: #333333;
+  --font-color-regular: #606266;
+  --font-color-secondary: #909399;
+  --font-color-placeholder: #C0C4CC;
+
+  /* Border Style */
+  --border-color: #DCDFE6;
+  --border-color-light: #E4E7ED;
+  --border-color-lighter: #EBEEF5;
+  --border-color-extralight: #F2F6FC;
+
+  /* Note Content Style */
+  --note-tag-color: #ff9634;
+}

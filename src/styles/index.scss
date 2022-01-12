@@ -1,0 +1,12 @@
+@import './note.scss';
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+#app {
+  height: 100%;
+  font-size: 14px;
+  color: var(--font-color);
+}

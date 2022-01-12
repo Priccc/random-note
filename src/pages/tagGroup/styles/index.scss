@@ -1,0 +1,28 @@
+.tag-group-component {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .group-title {
+    flex-shrink: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .groups-content {
+    flex: 1;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .group-item {
+      padding: 4px 0;
+      cursor: pointer;
+    }
+  }
+}

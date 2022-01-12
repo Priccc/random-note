@@ -1,0 +1,35 @@
+.home-container {
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  padding: 24px;
+
+  .sidebar-block {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 20px;
+
+    .user-entry-block {
+      flex-shrink: 0;
+      margin-bottom: 20px;
+    }
+
+    .heat-map-block {
+      flex-shrink: 0;
+      margin-bottom: 20px;
+    }
+
+    .tag-group-block {
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+
+  .viewer-block {
+    flex: 1;
+  }
+
+  .editor-block {}
+}
